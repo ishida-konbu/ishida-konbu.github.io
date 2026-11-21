@@ -1,6 +1,82 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f0e3"><title>ishida-konbu ｜ ゲーム</title>
-<link rel="icon" href="./mochi-quest/assets/ui/seal.svg">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#f5f0e3 url('./mochi-quest/assets/ui/paper.png');color:#332f27;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}main{width:min(980px,92%);margin:6vh auto}header{border-bottom:1px solid #ab9f85;padding-bottom:16px;font:600 18px Georgia,serif;letter-spacing:.03em}article{margin:28px 0;padding:6px;border:1px solid #978b70;background:#fff9e9}a{color:inherit}figure{margin:0;position:relative}figure img{width:100%;display:block;aspect-ratio:2.25;object-fit:cover}section{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:24px}h1{font:600 clamp(36px,6vw,69px)/1 Georgia,serif;letter-spacing:-.045em;margin:0}p{margin:10px 0 0;line-height:1.8}a.play{display:inline-block;padding:13px 22px;background:#994436;color:#fff7e6;text-decoration:none;border-radius:3px;white-space:nowrap}a.play:hover{background:#793326}footer{font-size:13px}footer a{text-underline-offset:4px}@media(max-width:620px){section{display:block;padding:18px}.play{margin-top:19px}figure img{aspect-ratio:1.65}}
-</style></head><body><main><header>ishida-konbu</header><article><figure><a href="./mochi-quest/" aria-label="Mochi Quest を開く"><img src="./mochi-quest/assets/landscape/river.webp" alt="松の枝の下、朱色の太陽が川の渡しを照らす絵巻"></a></figure><section><div><h1>Mochi Quest</h1><p>鳥獣戯画道中記<br>お餅になって、六つの景色を旅しよう。</p></div><a class="play" href="./mochi-quest/">絵巻の旅を始める</a></section></article><footer><a href="https://github.com/ishida-konbu">GitHub</a></footer></main></body></html>
+<html lang="ja">
+  <head>
+    <base href="./mochi-quest/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f6f1e5" />
+    <title>ishida-konbu ｜ Mochi Quest 作品選択</title>
+    <meta
+      name="description"
+      content="お餅になって鳥獣戯画の世界を旅しよう。3Dの六景巡りと、横にひらく絵巻道中から選べます。"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/ui/seal.svg" />
+    <link rel="stylesheet" href="./library.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="masthead">
+        <a class="brand" href="./" aria-label="Mochi Quest 作品選択"
+          ><img src="./assets/ui/seal.svg" width="45" height="45" alt="" />
+          <div>
+            <h1>Mochi Quest</h1>
+            <span>鳥獣戯画道中記</span>
+          </div></a
+        >
+        <a class="account" href="https://github.com/ishida-konbu"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1.01.07 1.53 1.04 1.53 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.11-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.55 9.55 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.21 2.4.11 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.73c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"
+            /></svg
+          >ishida-konbu</a
+        >
+      </header>
+      <main>
+        <div class="shelf-heading">
+          <h2>作品を選ぶ</h2>
+          <span></span>
+        </div>
+        <div class="library">
+          <a href="./two/" class="game-card next" aria-label="Mochi Quest 2 を遊ぶ"
+            ><div class="cover">
+              <img
+                src="./assets/covers/two.webp"
+                alt="立体の鳥居と川に続く山道に立つ、鉢巻きのお餅"
+                fetchpriority="high"
+              /><span class="genre">3D オープンワールド</span>
+            </div>
+            <div class="caption">
+              <div>
+                <h3>Mochi Quest <b>2</b></h3>
+                <h4>六景巡り</h4>
+              </div>
+              <span class="play"><i></i>遊ぶ</span>
+            </div>
+            <p>橋を渡り、山道を登り、六つの名所で御朱印を集める。お餅の目線で巡る立体の里。</p></a
+          >
+          <a href="./one/" class="game-card first" aria-label="Mochi Quest 1 を遊ぶ"
+            ><div class="cover">
+              <img
+                src="./assets/covers/one.webp"
+                alt="川辺の絵巻で、荷を担ぐうさぎや相撲を取るカエルと出会うお餅"
+              /><span class="genre">横スクロール</span>
+            </div>
+            <div class="caption">
+              <div>
+                <h3>Mochi Quest <b>1</b></h3>
+                <h4>絵巻道中</h4>
+              </div>
+              <span class="play"><i></i>遊ぶ</span>
+            </div>
+            <p>荷運びのうさぎに三条通知をひと投げ。墨絵の道をもっちり歩く、はじまりの旅。</p></a
+          >
+        </div>
+      </main>
+      <footer>
+        <span class="line"></span><span class="end-seal" aria-hidden="true">餅</span
+        ><span class="line"></span>
+      </footer>
+    </div>
+  </body>
+</html>
